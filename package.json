@@ -1,0 +1,8 @@
+{
+  "name": "sturdy-guacamole",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hamiltoon/sturdy-guacamole.git",
+  "author": "John Alm Mårtensson <john.alm.martensson@gmail.com>",
+  "private": true
+}
