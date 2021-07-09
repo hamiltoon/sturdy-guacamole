@@ -2,14 +2,9 @@ import { Neo4jGraphQL } from '@neo4j/graphql'
 import neo4j from 'neo4j-driver'
 import { ApolloServer } from 'apollo-server'
 import dotenv from 'dotenv'
+import { typeDefs } from './schema'
 
 dotenv.config()
-
-const typeDefs = `
-    type Node {
-        id: ID!
-    }
-`
 
 const driver = neo4j.driver(
   process.env.NEO4J_DB_HOST,
@@ -23,4 +18,4 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req }),
 })
 
-server.listen(4000).then(() => console.log('running on:localhost:4000'))
+server.listen(4000).then(() => console.log('running localhost:4000'))

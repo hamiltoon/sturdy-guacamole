@@ -7,4 +7,6 @@ module.exports = {
   semi: false,
   printWidth: 100,
   endOfLine: 'lf',
+  // importOrder: ['^@server/(.*)$', '^@material-ui/(.*)$', '^Common/(.*)$', '^[./]'],
+  // importOrderSeparation: true,
 }
